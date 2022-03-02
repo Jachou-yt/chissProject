@@ -12,6 +12,7 @@ setup(
     author_email="jachoumartayan@gmail.com",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
+    url='https://github.com/Jachou-yt/chissProject',
     packages=find_packages(),
     install_requires=[],
     keywords=['python','rat','crevard','ratus','fr','pince'],
