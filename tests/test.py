@@ -1,3 +1,3 @@
 import src.chiss.rat as ratus
 
-ratus.prix_objet()
+ratus.enrichir_le_chiss()

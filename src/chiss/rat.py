@@ -1,8 +1,12 @@
 import time
-
+import webbrowser
+import uuid
+import random
+from tkinter import *
 
 def waits(sec):
     time.sleep(sec)
+
 
 # Des idées pour économiser
 
@@ -59,11 +63,51 @@ def crevaritude():
 
 # Produit le son du chiss sauvage
 
+def bruit_du_chiss():
+    print('Le son du chiss !')
+    webbrowser.open('https://jachou-yt.github.io/My-website/chissProject-storage/rat.wav')
+
+
 # Faire baisser le prix d'un objet facilement
 
 def prix_objet():
     print("Remplacer l'étiquette par une autre ! Pour le chiss ça a marché, pourquoi pas vous ?")
     waits(3)
+
+
+# Chiss s'enrichit
+
+def enrichir_le_chiss():
+    # Infos
+    bitcoin_found = True
+    sold = 0
+    failed_attempt = 0
+    btc_found = 0
+
+    # Start fake mining
+    fake_rd_generate = random.randint(1, 1000000)
+    print('Bitcoin finding by Jachou.')
+    waits(1)
+    while bitcoin_found:
+        # title cmd
+        ws = Tk()
+        ws.title('Bitcoin Miner by Jachou | Sold : ' + sold + ' | Attempt failed : ' + failed_attempt + ' | Bitcoin found : ' + btc_found)
+        ws.mainloop()
+
+        bitcoin_id = uuid.uuid4()
+        rd = random.randint(1, 1000000)
+        if rd == fake_rd_generate:
+            print('\033[1;32;40m [Bitcoin Mining] Bitcoin has been found : \n' + str(bitcoin_id))
+            btc_found += 1
+            waits(1)
+            rd_sold = random.uniform(0.000001, 0.123679)
+            sold += rd_sold
+            print('\033[1;32;40m [Bitcoin Mining]  Your sold is : \n' + str(sold))
+            input('\033[1;32;40m [Bitcoin Mining] Press enter to continue...\n')
+        else:
+            print('[Bitcoin Mining] \033[1;31;40m Bitcoin failed attempt : \n' + str(bitcoin_id))
+            failed_attempt += 1
+
 
 # Toutes les fonctionnalités
 
@@ -71,3 +115,4 @@ def all():
     crevaritude()
     économie()
     prix_objet()
+    enrichir_le_chiss()
