@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: chiss
-Version: 0.0.10
+Version: 1.0.0
 Summary: Le package des rats
 Home-page: https://github.com/Jachou-yt/chissProject
 Author: Jachou
@@ -20,7 +20,8 @@ License-File: LICENSE
 Mon but : Aider les rats de france
 
 # release
+
 ### 06/05/2022
-Recode complet.
+Le module chiss marche !
 
 
