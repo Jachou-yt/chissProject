@@ -6,10 +6,15 @@ Mon but : Aider les rats de france
 ### 06/05/2022
 - Le module chiss marche !
 - Ajout de fonctionnalité complémentaire
+### 08/05/2022
+- Son du chiss
+- Notes.ipynb
+- enrichi le chiss
+- __init__.py
 
 
 # Futurs ajouts
-- [ ] Le son du chiss
+- [x] Le son du chiss
 - [ ] Le module daskill (intégérer dans le module chiss)
 - [ ] Méthode pour frauder dans les transports en communcs
 - [ ] Nouveau fichier python pour faire le rat avec ses potes

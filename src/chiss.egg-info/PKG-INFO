@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: chiss
-Version: 1.0.1
+Version: 1.0.3
 Summary: Le package des rats
 Home-page: https://github.com/Jachou-yt/chissProject
 Author: Jachou
@@ -23,10 +23,15 @@ Mon but : Aider les rats de france
 ### 06/05/2022
 - Le module chiss marche !
 - Ajout de fonctionnalité complémentaire
+### 08/05/2022
+- Son du chiss
+- Notes.ipynb
+- enrichi le chiss
+- __init__.py
 
 
 # Futurs ajouts
-- [ ] Le son du chiss
+- [x] Le son du chiss
 - [ ] Le module daskill (intégérer dans le module chiss)
 - [ ] Méthode pour frauder dans les transports en communcs
 - [ ] Nouveau fichier python pour faire le rat avec ses potes
@@ -37,13 +42,24 @@ Mon but : Aider les rats de france
 pip install chiss
 ````
 ## Utilisation
+Exemple 1 :
 ````python
-# Importer le modul chiss.
+# Importer le module chiss.
 from chiss import rat
 
 # Utiliser toutes ses fonctionnalités en profondeur.
 # N'oubliez pas les parenthèses.
 rat.all()
+````
+
+Exemple 2 : 
+````python
+# Importer le module chiss
+import chiss.rat as chiss
+
+# Passer des moments merveilleux avec le module chiss.
+# N'oubliez pas les parenthèses.
+chiss.all()
 ````
 
 

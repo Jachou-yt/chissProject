@@ -2,7 +2,8 @@ import time
 import webbrowser
 import uuid
 import random
-from tkinter import *
+import ctypes
+
 
 def waits(sec):
     time.sleep(sec)
@@ -90,19 +91,17 @@ def enrichir_le_chiss():
     waits(1)
     while bitcoin_found:
         # title cmd
-        ws = Tk()
-        ws.title('Bitcoin Miner by Jachou | Sold : ' + sold + ' | Attempt failed : ' + failed_attempt + ' | Bitcoin found : ' + btc_found)
-        ws.mainloop()
+        ctypes.windll.kernel32.SetConsoleTitleA("Bitcoin Miner by Jachou | BTC : " + str(sold) + " | BTC found : " + str(btc_found) + " | Failed Attempt : " + str(failed_attempt))
 
         bitcoin_id = uuid.uuid4()
         rd = random.randint(1, 1000000)
         if rd == fake_rd_generate:
-            print('\033[1;32;40m [Bitcoin Mining] Bitcoin has been found : \n' + str(bitcoin_id))
+            print('[Bitcoin Mining] \033[1;32;40m Bitcoin has been found : \n' + str(bitcoin_id))
             btc_found += 1
             waits(1)
             rd_sold = random.uniform(0.000001, 0.123679)
             sold += rd_sold
-            print('\033[1;32;40m [Bitcoin Mining]  Your sold is : \n' + str(sold))
+            print('[Bitcoin Mining] \033[1;32;40m Your sold is : \n' + str(sold))
             input('\033[1;32;40m [Bitcoin Mining] Press enter to continue...\n')
         else:
             print('[Bitcoin Mining] \033[1;31;40m Bitcoin failed attempt : \n' + str(bitcoin_id))
