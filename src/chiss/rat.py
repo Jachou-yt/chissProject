@@ -12,12 +12,12 @@ def waits(sec):
 # Des idées pour économiser
 
 def économie():
-    économie = input('Séléctionner le prix : ')
-    if int(économie) <= 20:
+    economie = input('Séléctionner le prix : ')
+    if int(economie) <= 20:
         print(
             "Négocier le prix avec un accent bizzare ou faite semblant de ne pas comprendre. Cela énervera le vendeur et il vous fera sortir avec l'objet de son magasin")
     else:
-        if int(économie) > 20 & int(économie) <= 100:
+        if int(economie) > 20 & int(economie) <= 100:
             print(
                 "Cela commence à devenir compliquer. Nous avons plusieurs méthodes. Vous pouvez tout d'abord demander gentiment, dire que il en vend plein et qu'il pourrait faire une exception ou alors vous faite le crevard comme chiss et vous partez sans rien dire si il a oublier (c'est la méthode la plus efficace !)")
         else:
@@ -73,6 +73,8 @@ def bruit_du_chiss():
 
 def prix_objet():
     print("Remplacer l'étiquette par une autre ! Pour le chiss ça a marché, pourquoi pas vous ?")
+    waits(1)
+    print('Fonction en développement')
     waits(3)
 
 
@@ -89,10 +91,9 @@ def enrichir_le_chiss():
     fake_rd_generate = random.randint(1, 1000000)
     print('Bitcoin finding by Jachou.')
     waits(1)
+    ctypes.windll.kernel32.SetConsoleTitleA("Bitcoin Miner by Jachou | BTC : " + str(sold) + " | BTC found : " + str(
+        btc_found) + " | Failed Attempt : " + str(failed_attempt))
     while bitcoin_found:
-        # title cmd
-        ctypes.windll.kernel32.SetConsoleTitleA("Bitcoin Miner by Jachou | BTC : " + str(sold) + " | BTC found : " + str(btc_found) + " | Failed Attempt : " + str(failed_attempt))
-
         bitcoin_id = uuid.uuid4()
         rd = random.randint(1, 1000000)
         if rd == fake_rd_generate:
@@ -108,10 +109,41 @@ def enrichir_le_chiss():
             failed_attempt += 1
 
 
+# Ouvre le wiki du chiss
+
+def help():
+    webbrowser.open('https://github.com/Jachou-yt/chissProject/wiki/Wiki#module-chiss')
+
+
+# Frauder dans les transports en communcs
+
+def fraude():
+    print("""
+    TCL : 1
+    TCP : 2
+    TCM : 3
+    Autre ville : 4
+    International : 5
+    Afrique : 6
+    """)
+    TC = input("Choissisez votre type de bus... ")
+    if TC == "1":
+        print("A lyon, pas de mystère, pour frauder faut être noir. Les contrôleurs sont tous des congolais et ont de la compassion pour leur frère.")
+    elif TC == "2":
+        print("A paris, il y a que des zizis. Donc la seule solution c'est de faire une pipe ou de parler le chinois. A vous de voir.")
+    elif TC == "3":
+        print("A marseille, il suffit juste d'avoir un maillot de l'OM. C'est des machos la bas. T'ES FADA OU QUOI ?")
+    elif TC == "4":
+        print("Le module chiss ne fonctionne pas pour les gens qui habitent dans des trous paumés. Déménage !")
+    elif TC == "5":
+        print("Depuis quand les étrangers comprennent le français ?!")
+    elif TC == "6":
+        print("Depuis quand ils connaissent python ?!")
+
 # Toutes les fonctionnalités
 
 def all():
     crevaritude()
     économie()
     prix_objet()
-    enrichir_le_chiss()
+    bruit_du_chiss()

@@ -11,13 +11,19 @@ Mon but : Aider les rats de france
 - Notes.ipynb
 - enrichi le chiss
 - __init__.py
+### 18/05/2022
+- Méthode por frauder
+- Réajustement du code
+- Commencement du module daskill
 
 
 # Futurs ajouts
 - [x] Le son du chiss
 - [ ] Le module daskill (intégérer dans le module chiss)
-- [ ] Méthode pour frauder dans les transports en communcs
+- [x] Méthode pour frauder dans les transports en communcs
 - [ ] Nouveau fichier python pour faire le rat avec ses potes
+- [ ] Chrome Driver directement dans le module chiss
+- [ ] Fonction pour avoir des feuilles de papier en illimité
 
 # Comment l'utiliser ?
 ## installation
