@@ -1,0 +1,13 @@
+name: chiss
+description: Le package des rats
+license_spdx: MIT
+version: 1.0.4
+spec_version: 1.0
+home_url: https://github.com/Jachou-yt/chissProject
+news_url: https://libraries.io/pypi/chiss/versions.atom
+date: 2022-05-18
+about_resource: NONE
+libraries_io_url: https://libraries.io/pypi/chiss?number=1.0.4
+vcs_tool: git
+vcs_repository: https://github.com/Jachou-yt/chissProject
+vcs_branch: master
